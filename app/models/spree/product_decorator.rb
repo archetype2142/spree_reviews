@@ -10,11 +10,11 @@ module Spree
     end
 
     def recalculate_rating
-      self[:reviews_count] = reviews.reload.approved.count
+      self.reviews_count = reviews.reload.approved.count
       if reviews_count > 0
-        self[:avg_rating] = reviews.approved.sum(:rating).to_f / reviews_count
+        self.avg_rating = reviews.approved.sum(:rating).to_f / reviews_count
       else
-        self[:avg_rating] = 0
+        self.avg_rating = 0
       end
       save!
     end
