@@ -15,6 +15,7 @@ en:
       spree/review:
         one: one review
         other: "%{count} reviews"
+        many: "%{count} reviews"
   spree:
     approval_status: Approval status
     approve: Approve
@@ -24,6 +25,7 @@ en:
     based_upon_review_count:
       one: based upon one review
       other: "based upon %{count} reviews"
+      many: "based upon %{count} reviews"
     by: by
     editing_review_for_html: 'Editing review for %{link}'
     error_approve_review: Error approving review
@@ -55,6 +57,7 @@ en:
     star:
       one: "1"
       other: "%{count}"
+      many: "%{count}"
     stars: Stars
     submit_your_review: Submit your review
     submitted_on: Submitted on
@@ -62,6 +65,7 @@ en:
     voice:
       one: "1 voice"
       other: "%{count} voices"
+      many: "%{count} voices"
     was_this_review_helpful: "Was this review helpful to you?"
     write_your_own_review: Write your own review
     you_must_enter_value_for_rating: "You must enter a value for rating."
