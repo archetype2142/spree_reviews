@@ -1,5 +1,5 @@
 module Spree
-  class ProductDecorator
+  module ProductDecorator
     def self.prepended(base)
       base.has_many :reviews
     end
