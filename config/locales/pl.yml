@@ -58,6 +58,7 @@ pl:
       one: "1"
       few: "%{count}"
       other: "%{count}"
+      many: "%{count}"
     stars: Gwiazdki
     submit_your_review: Dodaj opinię
     submitted_on: Dodano
