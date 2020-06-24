@@ -1,8 +1,9 @@
 module Spree
   module ProductsControllerDecorator
     def self.prepended(base)
-      helper Spree::ReviewsHelper
+      base.helper Spree::ReviewsHelper
     end
+    
     reviews_fields = [:avg_rating, :reviews_count]
     reviews_fields.each { |attrib| Spree::PermittedAttributes.product_attributes << attrib }
 
