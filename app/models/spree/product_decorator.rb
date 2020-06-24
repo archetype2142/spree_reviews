@@ -16,7 +16,7 @@ module Spree
       else
         self[:avg_rating] = 0
       end
-      save
+      save!
     end
   end
 end
