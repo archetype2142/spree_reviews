@@ -13,6 +13,8 @@ loader.setup
 
 module Spree
   module Reviews
+    config.autoload_paths += %W(#{config.root}/lib)
+    
     module_function
 
     def config(*)
