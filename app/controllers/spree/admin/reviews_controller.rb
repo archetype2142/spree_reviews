@@ -6,7 +6,13 @@ class Spree::Admin::ReviewsController < Spree::Admin::ResourceController
   end
   
   def destroy
-    puts params
+    review = Spree::Review.find(params[:id])
+    
+    if review.destroy
+      flash[:notice] = "Deleted!"
+    else
+      flash[:error] = "Can't Delete"
+    end
   end
   
   def approve
