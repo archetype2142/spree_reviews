@@ -4,7 +4,11 @@ class Spree::Admin::ReviewsController < Spree::Admin::ResourceController
   def index
     @reviews = collection
   end
-
+  
+  def destroy
+    puts "TRY TO DESTROY"
+  end
+  
   def approve
     review = Spree::Review.find(params[:id])
     if review.update_attribute(:approved, true)
