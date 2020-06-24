@@ -12,13 +12,13 @@ loader.ignore(kernel_ext)
 loader.setup
 
 module Spree
-  module Reviews
-    config.autoload_paths += %W(#{config.root}/lib)
-    
+  module Reviews    
     module_function
 
     def config(*)
       yield(Spree::Reviews::Config)
     end
+    
+    config.autoload_paths += %W(#{config.root}/lib)
   end
 end
