@@ -1,5 +1,5 @@
 module Spree
-  class ProductsControllerDecorator
+  module ProductsControllerDecorator
     helper Spree::ReviewsHelper
 
     reviews_fields = [:avg_rating, :reviews_count]
