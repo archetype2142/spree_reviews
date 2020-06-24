@@ -1,4 +1,4 @@
-def Spree::ProductsControllerDecorator
+class Spree::ProductsControllerDecorator
   helper Spree::ReviewsHelper
 
   reviews_fields = [:avg_rating, :reviews_count]
