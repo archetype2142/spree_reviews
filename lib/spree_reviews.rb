@@ -8,7 +8,7 @@ require 'zeitwerk'
 loader = Zeitwerk::Loader.for_gem
 loader.setup # ready!
 
-all_models = Rails.root.join("app/models/spree")
+all_models = "#{__dir__}/my_gem/app/models/spree"
 loader.ignore(all_models)
 
 module Spree
