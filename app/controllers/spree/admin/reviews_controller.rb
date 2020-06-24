@@ -6,7 +6,7 @@ class Spree::Admin::ReviewsController < Spree::Admin::ResourceController
   end
   
   def destroy
-    puts "TRY TO DESTROY"
+    puts params
   end
   
   def approve
