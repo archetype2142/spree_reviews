@@ -17,7 +17,7 @@ class Spree::Admin::ReviewsController < Spree::Admin::ResourceController
   
   def approve
     review = Spree::Review.find(params[:id])
-    review.update_attribute!(approved: true)
+    review.update!(approved: true)
 #     if 
 #       #curr_product = review.product
 #       #reviews = curr_product.reload.reviews.approved
