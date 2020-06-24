@@ -1,4 +1,4 @@
-class Spree::ProductsControllerDecorator
+class Spree::ProductDecorator
   def self.prepended(base)
     base.has_many :reviews
   end
