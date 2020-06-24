@@ -11,8 +11,8 @@ class Spree::Admin::ReviewsController < Spree::Admin::ResourceController
       curr_product = review.product
       reviews = curr_product.reload.reviews.approved
 
-      review.update!(reviews_count: reviews.count)
-      review.update!(avg_rating: reviews.sum(:rating).to_f / reviews.count)
+      curr_product.update!(reviews_count: reviews.count)
+      curr_product.update!(avg_rating: reviews.sum(:rating).to_f / reviews.count)
         
       flash[:notice] = Spree.t(:info_approve_review)
     else
