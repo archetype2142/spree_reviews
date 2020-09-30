@@ -1,3 +1,4 @@
+
 class Spree::ProductDecorator
   def self.prepended(base)
     base.has_many :reviews
@@ -17,5 +18,6 @@ class Spree::ProductDecorator
     save!
   end
 end
+
 
 Spree::Product.prepend Spree::ProductDecorator
