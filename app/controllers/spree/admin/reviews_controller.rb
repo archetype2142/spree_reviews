@@ -26,7 +26,7 @@ class Spree::Admin::ReviewsController < Spree::Admin::ResourceController
         
       flash[:notice] = Spree.t(:info_approve_review)
     else
-      flash[:error] = Spree.t(:error_approve_review)
+      flash[:error] = review.errors
     end
     redirect_to admin_reviews_path
   end

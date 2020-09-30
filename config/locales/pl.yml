@@ -10,7 +10,7 @@ pl:
         created_at: Utworzone
         ip_address: IP
         user: Użytkownik
-        show_identifier: ~
+        show_identifier: Pokaż identyfikator
     models:
       spree/review:
         one: jedna opinia
